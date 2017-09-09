@@ -1,0 +1,277 @@
+#content {
+	width:100%;
+	margin:20px 0;
+	margin-bottom:110px;
+	#help-module {
+		display: none;
+		position:fixed;
+		width:98%;
+		left:1%;
+		background:#fff;
+		color:#444;
+		font-weight:300;
+		border-radius:5px;
+		z-index:999;
+		box-sizing: border-box;
+		padding:15px;
+		box-shadow:4px 4px 15px #222;
+		.close-help {
+			float:right;
+			margin:5px 5px 0 0;
+			color:#444;
+		}
+		.close-help:hover {
+			cursor:pointer;
+			color:#888;
+		}
+		h2 {
+			margin-bottom:10px;
+		}
+		p {
+			small {
+				float:left;
+				display:block;
+				height:40px;
+				width:40px;
+				border:1px solid #444;
+				line-height: 40px;
+				text-align: center;
+				border-radius:4px;
+				clear:both;
+				margin-top:5px;
+			}
+			span {
+				margin-left:8px;
+				float:left;
+				height:40px;
+				line-height: 40px;
+				margin-top:5px;
+			}
+		}
+	}
+	.show-actions {
+		display: none;
+		position:absolute;
+		right:25px;
+		top:120px;
+		z-index:998;
+	}
+	.show-action {
+		height:90px;
+		width:90px;
+		background:rgba(0, 0, 0, 0.6);
+		border-radius:10px;
+		color:#888;
+		font-weight:300;
+		text-align: center;
+		text-transform: uppercase;
+		font-size:13px;
+		z-index: 998;
+		margin-bottom:10px;
+		i {
+			margin-top:24px;
+			margin-bottom:5px;
+			width:100%;
+			text-align: center;
+			font-size:22px;
+		}
+	}
+	.playing-cards {
+		width:80%;
+		max-width:1024px;
+		margin:20px auto;
+	}
+	.message {
+		width:80%;
+		max-width:1024px;
+		padding:15px 8px;
+		box-sizing: border-box;
+		text-align:center;
+		background:#E3583C;
+		color:#fff;
+		margin:10px auto;
+		font-weight:300;
+		min-height:49px;
+	}
+	.card-holder {
+		width:20%;
+		float:left;
+		background:#B1C6D7;
+		box-sizing: border-box;
+		padding:15px;
+		position: relative;
+		overflow:hidden;
+		.card, .back-card {
+			width:100%;
+			img {
+				width:100%;
+			}
+		}
+	}
+	.holder-3 {
+		background: #446F9D;
+		overflow:hidden;
+	}
+
+	.active {
+		background:#E3583C;
+	}
+
+	.actions {
+		width:80%;
+		max-width:1024px;
+		margin:20px auto;
+		ul {
+			li {
+				display: inline-block;
+				height:45px;
+				padding:0 15px;
+				background:#446F9D;
+				opacity:0.9;
+				color:#fff;
+				text-align: center;
+				margin-right:10px;
+				font-weight:300;
+				line-height: 45px;
+			}
+			li.new-game {
+				background:#E3583C;
+			}
+			li:hover {
+				opacity:0.7;
+			}
+
+			li.help-action {
+				float:right;
+				background:#9FB0C1;
+				margin-right:0;
+			}
+		}
+	}
+
+	.card, .back-card {
+	  	background-size: 190px 259px;
+	  	overflow: hidden;
+	}
+	.hidden {
+	  	overflow: hidden;
+	}
+	.hidden img {
+	  	margin-left: -9999px;
+	  	margin-top: -9999px;
+	}
+}
+
+.desktop-bottom-ad {
+	width:728px;
+	height:90px;
+	background:#000;
+	position:fixed;
+	bottom:0px;
+	left:50%;
+	margin-left:-364px;
+}
+.mobile-bottom-ad {
+	display:none;
+	width:320px;
+	height:100px;
+	background:#000;
+	position:fixed;
+	bottom:0px;
+	left:50%;
+	margin-left:-160px;
+}
+
+.close-ads {
+	position:absolute;
+	width:10px;
+	height:10px;
+	border-radius: 100%;
+	z-index:999;
+	right:-5px;
+	top:-5px;
+	background:#222;
+	border:1px solid #ededed;
+	color:#ededed;
+	font-size:8px;
+	text-align: center;
+	line-height: 10px;
+}
+.close-ads:hover {
+	cursor: pointer;
+}
+
+@media (max-width: 735px){
+	.desktop-bottom-ad {
+		display:none;
+	}
+	.mobile-bottom-ad {
+		display:block;
+	}
+}
+
+@media (max-width: 700px) {
+	.holder-1, .holder-2, .holder-3 {
+		width:33% !important;
+		padding-top:-10px !important;
+	}
+	.holder-4, .holder-5 {
+		width:50% !important;
+		margin-top:10px;
+	}
+	.actions {
+		ul {
+			text-align:cener;
+			li {
+				margin-bottom:10px;
+			}
+		}
+	}
+	.single-card-holder {
+		width:40% !important;
+	}
+}
+@media (max-width: 500px) {
+	header {
+		height:30px;
+		line-height: 30px;
+		.logo {
+			height:30px;
+			line-height: 30px;
+		}
+		.mute-button {
+			height:30px;
+			line-height:30px;
+		}
+	}
+	#content {
+		margin-top:40px;
+		.show-actions {
+			top:30px;
+		}
+		.show-action {
+			background:rgba(0,0,0, 0.8);
+		}
+	}
+	.logo {
+		height:30px;
+		line-height: 30px;
+	}
+	.game-links {
+		ul {
+			top:30px;
+			li{
+				box-sizing: border-box;
+				width:120px;
+				height:30px;
+				padding:0;
+				line-height: 30px;
+				text-align:center;
+			}
+		}
+	}
+
+	.single-card-holder {
+		width:80% !important;
+	}
+}

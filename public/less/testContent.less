@@ -1,0 +1,387 @@
+#content {
+	width:100%;
+	max-width:1024px;
+	margin-bottom:110px;
+	position:relative;
+	#help-module {
+		display: none;
+		position:fixed;
+		width:98%;
+		max-width:1024;
+		left:1%;
+		background:#fff;
+		color:#444;
+		font-weight:300;
+		border-radius:5px;
+		z-index:999;
+		box-sizing: border-box;
+		padding:15px;
+		box-shadow:4px 4px 15px #222;
+		.close-help {
+			float:right;
+			margin:5px 5px 0 0;
+			color:#444;
+		}
+		.close-help:hover {
+			cursor:pointer;
+			color:#888;
+		}
+		h2 {
+			margin-bottom:10px;
+		}
+		p {
+			small {
+				float:left;
+				display:block;
+				height:40px;
+				width:40px;
+				border:1px solid #444;
+				line-height: 40px;
+				text-align: center;
+				border-radius:4px;
+				clear:both;
+				margin-top:5px;
+			}
+			span {
+				margin-left:8px;
+				float:left;
+				height:40px;
+				line-height: 40px;
+				margin-top:5px;
+			}
+		}
+	}
+	.show-actions {
+		display: none;
+		position:absolute;
+		right:10px;
+		top:50px;
+		z-index:998;
+	}
+	.show-action {
+		height:80px;
+		width:80px;
+		background:rgba(0, 0, 0, 0.6);
+		border-radius:10px;
+		color:#888;
+		font-weight:300;
+		text-align: center;
+		text-transform: uppercase;
+		font-size:13px;
+		z-index: 998;
+		margin-bottom:10px;
+		i {
+			margin-top:18px;
+			margin-bottom:5px;
+			width:100%;
+			text-align: center;
+			font-size:22px;
+		}
+	}
+	.playing-cards {
+		width:1210px;
+		margin:20px;
+		overflow:hidden;
+		box-sizing: border-box;
+	}
+	.message {
+		width:100%;
+		padding:10px 8px;
+		box-sizing: border-box;
+		text-align:center;
+		background:#E3583C;
+		color:#fff;
+		margin:10px 0;
+		font-weight:300;
+		min-height:39px;
+	}
+	.card-holder {
+		width:242px;
+		height:343px;
+		float:left;
+		background:#B1C6D7;
+		box-sizing: border-box;
+		padding:10px;
+		overflow:hidden;
+		.card, .back-card{
+			width:222px;
+			height:323px;
+			background:#fff;
+			border-radius:10px;
+			box-sizing: border-box;
+			padding:5px;
+			z-index:1;
+			position:relative;
+			border:1px solid #666;
+			img {
+				width:212px;
+				height:313px;
+			}
+		}
+		.back-card {
+			padding:0;
+			img {
+				width:100%;
+				height:100%;
+				border-radius:10px;
+			}
+		}
+		.new-card {
+			z-index:1000 !important;
+			position:relative;
+			img {
+				z-index:1000 !important;
+			}
+		}
+	}
+	.holder-1 {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.holder-5 {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	.holder-3 {
+		background: #446F9D;
+		overflow:hidden;
+	}
+
+	.active {
+		background:#E3583C;
+	}
+
+	.actions {
+		width:80%;
+		max-width:1024px;
+		margin:20px auto;
+		ul {
+			li {
+				display: inline-block;
+				height:45px;
+				padding:0 15px;
+				background:#446F9D;
+				opacity:0.9;
+				color:#fff;
+				text-align: center;
+				margin-right:10px;
+				font-weight:300;
+				line-height: 45px;
+			}
+			li.new-game {
+				background:#E3583C;
+			}
+			li:hover {
+				opacity:0.7;
+			}
+
+			li.help-action {
+				float:right;
+				background:#9FB0C1;
+				margin-right:0;
+			}
+		}
+	}
+	.hidden {
+	  	overflow: hidden;
+	}
+	.hidden img {
+	  	margin-left: -9999px;
+	  	margin-top: -9999px;
+	}
+}
+
+.desktop-bottom-ad {
+	width:728px;
+	height:90px;
+	background:#000;
+	position:fixed;
+	bottom:0px;
+	left:50%;
+	margin-left:-364px;
+}
+.mobile-bottom-ad {
+	display:none;
+	width:320px;
+	height:100px;
+	background:#000;
+	position:fixed;
+	bottom:0px;
+	left:50%;
+	margin-left:-160px;
+}
+
+.close-ads {
+	position:absolute;
+	width:10px;
+	height:10px;
+	border-radius: 100%;
+	z-index:999;
+	right:-5px;
+	top:-5px;
+	background:#222;
+	border:1px solid #ededed;
+	color:#ededed;
+	font-size:8px;
+	text-align: center;
+	line-height: 10px;
+}
+.close-ads:hover {
+	cursor: pointer;
+}
+
+.s-message {
+		width:80%;
+		max-width:1024px;
+		margin:10px auto;
+		font-weight:300;
+		min-height:39px;
+
+		.message-content {
+			width:80%;
+			float:left;
+			min-height:29px;
+			background:#E3583C;
+			padding:5px 8px;
+			box-sizing: border-box;
+			text-align:center;
+			color:#fff;
+			border-top-left-radius:4px;
+			border-bottom-left-radius:4px;
+		}
+		.count-content {
+			width:20%;
+			float:right;
+			min-height:29px;
+			padding:5px 8px;
+			box-sizing: border-box;
+			text-align:center;
+			color:#fff;
+			background:#446F9D;
+			border-top-right-radius:4px;
+			border-bottom-right-radius:4px;
+		}
+}
+.single-playing-cards {
+	width:100%;
+	margin-top:20px;
+}
+.single-card-holder {
+	width:242px;
+	height:343px;
+	margin:0 auto;
+	background:#B1C6D7;
+	box-sizing: border-box;
+	padding:10px;
+	overflow:hidden;
+	border-radius:8px;
+	.card, .back-card{
+			width:222px;
+			height:323px;
+			background:#fff;
+			border-radius:10px;
+			box-sizing: border-box;
+			padding:5px;
+			z-index:1;
+			position:relative;
+			border:1px solid #666;
+			img {
+				width:212px;
+				height:313px;
+			}
+		}
+		.back-card {
+			padding:0;
+			img {
+				width:100%;
+				height:100%;
+				border-radius:10px;
+			}
+		}
+		.new-card {
+			z-index:1000 !important;
+			position:relative;
+			img {
+				z-index:1000 !important;
+			}
+		}
+}
+
+@media (max-width: 735px){
+	.desktop-bottom-ad {
+		display:none;
+	}
+	.mobile-bottom-ad {
+		display:block;
+	}
+}
+
+@media (max-width: 737px) {
+	.actions {
+		ul {
+			text-align:cener;
+			li {
+				margin-bottom:10px;
+			}
+		}
+	}
+	.single-card-holder {
+		width:40% !important;
+	}
+
+	#content {
+		.card-holder, .single-card-holder {
+			width:172px !important;
+			height:233px;
+			.card, .back-card{
+				width:152px;
+				height:213px;
+				img {
+					width:142px;
+					height:203px;
+				}
+			}
+			.back-card {
+				padding:0;
+				img {
+					width:100%;
+					height:100%;
+					border-radius:10px;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 737px) {
+	header {
+		height:50px;
+		line-height: 50px;
+		.logo, .mute-button {
+			height:50px;
+			line-height: 50px;
+		}
+	}
+	#content {
+		.show-actions {
+			top:50px;
+		}
+		.show-action {
+			background:rgba(0,0,0, 0.8);
+		}
+	}
+	.logo {
+		height:30px;
+		line-height: 30px;
+	}
+	.game-links {
+		ul {
+			li{
+				box-sizing: border-box;
+				height:30px;
+				padding:0;
+				line-height: 30px;
+				text-align:center;
+			}
+		}
+	}
+}
